@@ -1,8 +1,10 @@
+.cache
 .vscode
 ai.dll
 libai.so
 ai_src/ai.dll
 ai_src/libai.so
+ai_src/libai.a
 system.exe
 obj/*
 share/obj/*
@@ -12,3 +14,4 @@ ai_src/obj/*
 *.ll
 raw_log
 match_result*
+build
