@@ -16,8 +16,7 @@ add_custom_command(OUTPUT ${localboost_SOURCE_DIR}/project-config.jam
 )
 
 add_custom_command(OUTPUT ${localboost_SOURCE_DIR}/stage/lib/libboost_system.a
-    COMMAND ${localboost_SOURCE_DIR}/bootstrap.sh --with-libraries=system
-    COMMAND ${localboost_SOURCE_DIR}/b2 headers
+    COMMAND ${localboost_SOURCE_DIR}/b2 link=static
     WORKING_DIRECTORY ${localboost_SOURCE_DIR}
     DEPENDS ${localboost_SOURCE_DIR}/project-config.jam
 )
